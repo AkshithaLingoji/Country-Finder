@@ -1,9 +1,9 @@
-🌍 Country Finder
+##  🌍 Country Finder
 
 Country Finder is a simple web application that allows users to search for any country and view detailed information using the REST Countries API.
 This project was built as part of my JavaScript learning journey, with a focus on understanding API calls, asynchronous programming, and dynamic UI updates.
 
-✨ Features
+### ✨ Features
 
 - Search countries by name
 - Fetches real-time data from the REST Countries API
@@ -20,7 +20,7 @@ This project was built as part of my JavaScript learning journey, with a focus o
 
 
 
-🛠️ Technologies Used
+###  🛠️ Technologies Used
 
 - HTML5
 - CSS3
@@ -28,7 +28,7 @@ This project was built as part of my JavaScript learning journey, with a focus o
 - REST Countries API
 
 
-🎯 Learning Outcomes
+### 🎯 Learning Outcomes
 
 Through this project, I learned:
 - How to fetch data from an external API using `fetch`
