@@ -1,7 +1,4 @@
-// ==========================
 // STEP 1: DOM SELECTION
-// ==========================
-
 // Search
 const countryForm = document.getElementById("countryForm");
 const countryInput = document.getElementById("countryInput");
@@ -46,10 +43,7 @@ const carSide = document.getElementById("carSide");
 const startOfWeek = document.getElementById("startOfWeek");
 
 
-// ==========================
 // STEP 2: PURE LOGIC FUNCTION
-// ==========================
-
 async function searchCountry(countryName) {
   const response = await fetch(
     `https://restcountries.com/v3.1/name/${countryName}?fullText=true`
@@ -64,10 +58,7 @@ async function searchCountry(countryName) {
 }
 
 
-// ==========================
 // STEP 3: FORM SUBMIT
-// ==========================
-
 countryForm.addEventListener("submit", async (e) => {
   e.preventDefault();
 
@@ -89,10 +80,8 @@ countryForm.addEventListener("submit", async (e) => {
   // Call logic function
   const country = await searchCountry(query);
 
-  // ==========================
-  // STEP 4: DECISION + UI
-  // ==========================
 
+  // STEP 4: DECISION + UI
   if (!country) {
     statusEl.textContent = "No results. Try another country.";
     statusEl.className = "status err";
@@ -100,10 +89,8 @@ countryForm.addEventListener("submit", async (e) => {
     return;
   }
 
-  // ==========================
-  // STEP 5: RENDER DATA
-  // ==========================
 
+  // STEP 5: RENDER DATA
   // Header
   flagImg.src = country.flags.svg;
   nameCommon.textContent = country.name.common;
