@@ -11,7 +11,7 @@
     <h1>Country Finder</h1>
     <p class="lead">Type any country and fetch details from the <strong>REST Countries</strong> API. Students will write the JavaScript to wire this up.</p>
 
-    <!-- SEARCH BAR (students: listen for submit and prevent default) -->
+    <!-- SEARCH BAR  -->
     <form id="countryForm" class="search" autocomplete="off">
       <label for="countryInput" class="sr-only">Country name</label>
       <input id="countryInput" name="q" placeholder="e.g., Portugal" required />
@@ -19,10 +19,10 @@
       <div class="hint">Examples: India, Japan, United States, Brazil</div>
     </form>
 
-    <!-- STATUS MESSAGES (students: toggle text + class: ok/err) -->
+    <!-- STATUS MESSAGES -->
     <div id="status" class="status" role="status" aria-live="polite">Waiting for a search…</div>
 
-    <!-- RESULT CARD (students: remove .hidden when data arrives) -->
+    <!-- RESULT CARD  -->
     <section id="resultCard" class="card hidden" aria-live="polite">
       <div class="header">
         <img id="flagImg" class="flag" alt="Flag" src="" />
@@ -100,7 +100,7 @@
       </div>
     </section>
 
-    <!-- ERROR CARD (students: show this when API fails or no match) -->
+    <!-- ERROR CARD -->
     <section id="errorCard" class="card hidden" aria-live="assertive">
       <div class="body">
         <p style="margin:0">No results. Check the spelling or try another country.</p>
